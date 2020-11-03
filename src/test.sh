@@ -7,7 +7,7 @@ SEEDTOOL="${1:-seedtool} --deterministic TEST"
 
 testDefault()
 {
-  assertEquals $'9d347f841a4e2ce6bc886e1aee74d824' \
+  assertEquals $'9d347f841a4e2ce6bc886e1aee74d820' \
     "$(${SEEDTOOL})"
 }
 
