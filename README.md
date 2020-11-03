@@ -1,6 +1,6 @@
 ![seedtool CI](https://github.com/gorazdko/bc-seedtool-cli/workflows/seedtool%20CI/badge.svg)
 
-# 🌱 Blockchain Commons bc-seedtool-cli
+# 🌱 Blockchain Commons bc-seedtool-cli  
 
 ## Introduction
 
