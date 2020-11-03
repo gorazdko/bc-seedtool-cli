@@ -4,7 +4,7 @@ name: ci
 on: [push, pull_request]
 
 jobs:
-  build macOS:
+  build-macOS:
     runs-on: macos-latest
 
     steps:
@@ -18,7 +18,7 @@ jobs:
     - name: make distclean
       run: make distclean
       
-  build Linux:
+  build-Linux:
 
     runs-on: ubuntu-latest
 
