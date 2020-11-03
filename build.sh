@@ -3,8 +3,6 @@
 git submodule init
 git submodule update
 
-exit 1
-
 source set_build_paths.sh
 
 # Terminal colors
