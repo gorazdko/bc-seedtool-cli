@@ -20,11 +20,15 @@ jobs:
       
   build-Linux:
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-16.04
 
     steps:
     - uses: actions/checkout@v2
     - name: dependencies
-      if: !clang-10 --version -v COMMAND &> /dev/null
-      run: echo "Clang not installed."
+      run: export CC="clang-10" && export CXX="clang++-10" && ./build.sh
+    - run: wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | sudo apt-key add - || exit 1
+    - run: sudo apt-add-repository "deb http://apt.llvm.org/xenial/ llvm-toolchain-xenial-10 main" || exit 1
+    - run: sudo apt-get update || exit 1
+    - run: sudo apt-get install -y clang-10 libc++-10-dev libc++abi-10-dev shunit2 make || exit 1
+
 
