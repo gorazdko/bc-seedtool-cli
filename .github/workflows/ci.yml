@@ -1,7 +1,7 @@
 name: ci
 on: [push, pull_request]
 jobs:
-  build-macOS:
+  build-MacOS:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v2
