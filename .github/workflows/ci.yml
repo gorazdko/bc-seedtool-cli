@@ -25,7 +25,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: dependencies
-      run: if ! clang-10 --version -v COMMAND &> /dev/null \
-           then \
-           echo "Please, install clang." \
-           fi
+      if: !clang-10 --version -v COMMAND &> /dev/null
+      run: echo "Clang not installed."
+
