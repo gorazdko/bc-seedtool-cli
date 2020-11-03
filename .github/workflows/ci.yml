@@ -4,8 +4,7 @@ name: ci
 on: [push, pull_request]
 
 jobs:
-  build:
-
+  build macOS:
     runs-on: macos-latest
 
     steps:
@@ -18,3 +17,15 @@ jobs:
       run: sudo make install
     - name: make distclean
       run: make distclean
+      
+  build Linux:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: dependencies
+      run: if ! clang-10 --version -v COMMAND &> /dev/null \
+           then \
+           echo "Please, install clang." \
+           fi
