@@ -1,8 +1,8 @@
 # 🌱 Blockchain Commons bc-seedtool-cli
 
-![macos](https://github.com/BlockchainCommons/bc-seedtool-cli/workflows/macOS/badge.svg)
-![linux](https://github.com/BlockchainCommons/bc-seedtool-cli/workflows/linux/badge.svg)
-![linter](https://github.com/BlockchainCommons/bc-seedtool-cli/workflows/linter/badge.svg)
+![macos](https://github.com/gorazdko/bc-seedtool-cli/workflows/macOS/badge.svg)
+![linux](https://github.com/gorazdko/bc-seedtool-cli/workflows/linux/badge.svg)
+![linter](https://github.com/gorazdko/bc-seedtool-cli/workflows/linter/badge.svg)
 
 ### _by [Wolf McNally](https://www.github.com/wolfmcnally) and [Christopher Allen](https://www.github.com/ChristopherA)_
 
