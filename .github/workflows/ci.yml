@@ -1,0 +1,15 @@
+name: seedtool CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: dependencies
+      run: brew install autoconf automake libtool shunit2
+    - name: build
+      run: ./build.sh
