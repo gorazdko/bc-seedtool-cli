@@ -1,4 +1,6 @@
-# 🌱 Blockchain Commons bc-seedtool-cli
+![seedtool CI](https://github.com/gorazdko/bc-seedtool-cli/workflows/seedtool%20CI/badge.svg)
+
+# 🌱 Blockchain Commons bc-seedtool-cli  
 
 ![macos](https://github.com/gorazdko/bc-seedtool-cli/workflows/macOS/badge.svg)
 ![linux](https://github.com/gorazdko/bc-seedtool-cli/workflows/linux/badge.svg)
