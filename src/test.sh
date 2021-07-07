@@ -9,7 +9,7 @@ SHUNIT2="${SCRIPT_DIR}/../deps/shunit2/shunit2"
 
 testDefault()
 {
-  assertEquals $'9d347f841a4e2ce6bc886e1aee74d824' \
+  assertEquals $'9d347f841a4e2ce6bc886e1aee74d820' \
     "$(${SEEDTOOL})"
 }
 
